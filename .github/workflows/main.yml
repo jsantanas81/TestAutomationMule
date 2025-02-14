@@ -31,4 +31,5 @@ jobs:
         run: anypoint-cli-v4 account:user:describe
       - name: List all Applications
         run: anypoint-cli-v4 runtime-mgr:application:list --environment Sandbox --output json
-
+      - name: List all Applications2
+        run: anypoint-cli-v4 runtime-mgr:application:list --environment Sandbox --output json | jq -r '.[0].id' | xargs -I {} anypoint-cli-v4 runtime-mgr:application:describe --environment Sandbox 
