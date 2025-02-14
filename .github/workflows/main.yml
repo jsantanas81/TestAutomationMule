@@ -27,4 +27,4 @@ jobs:
         run: npm install -g anypoint-cli-v4
   
       - name: Credentials Configuration
-        run: anypoint-cli-v4 conf client_id ${{secrets.CA_CLIENT_ID}} && anypoint-cli-v4 conf client_secret ${{secrets.CA_CLIENT_SECRET}} && anypoint-cli-v4 conf organization ${{secrets.CA_ORGANIZATION_ID}}
+        run: anypoint-cli-v4 conf client_id ${{secrets.CA_CLIENT_ID}} && anypoint-cli-v4 conf client_secret ${{secrets.CA_CLIENT_SECRET}} && anypoint-cli-v4 conf organization 33b27903-c4b2-4b5f-8c68-a23b0dae69d0
